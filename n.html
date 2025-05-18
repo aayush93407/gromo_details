@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+        Seller Biodata
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-color: #f7fafc; /* Light gray background */
+        }
+
+        .biodata-container {
+            max-width: 1024px; /* Increased max-width for more content */
+            width: 100%;
+            background-color: white;
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* Space between sections */
+        }
+
+        .section-title {
+            font-size: 1.25rem; /* Larger section titles */
+            font-weight: 700; /* Bolder */
+            background-color: #c6f6d5; /* A slightly softer green */
+            padding: 0.75rem 1rem; /* More padding for title */
+            border-left: 5px solid #48bb78; /* Green accent border */
+            margin-bottom: 0.75rem;
+            border-radius: 0.25rem;
+        }
+
+        .content-text {
+            font-size: 1rem; /* Slightly larger base text */
+            line-height: 1.75; /* Improved readability */
+            color: #4a5568; /* Softer black for text */
+        }
+        .list-item {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-sans">
+    <div class="biodata-container">
+        <div class="flex flex-col md:flex-row items-center mb-6 md:mb-8">
+            <div class="mb-4 md:mb-0 md:mr-8 flex-shrink-0">
+                <img alt="Seller's Photo - [SELLER NAME]" class="w-36 h-36 md:w-40 md:h-40 object-cover rounded-full shadow-lg border-4 border-green-300" height="160" src="data:image/png;base64,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" width="160"/>
+            </div>
+            <div>
+                <p class="font-extrabold text-3xl md:text-4xl leading-tight text-gray-900 mb-1">
+                    GROMO SELLER
+                </p>
+                <p class="text-lg leading-tight text-gray-700">
+                    Region: <span class="font-semibold">Bengaluru, Karnataka</span>
+                </p>
+                <p class="text-lg leading-tight text-gray-700">
+                    Languages Spoken: <span class="font-semibold">Kannada, English, Hindi, Tamil (Basic)</span>
+                </p>
+                <p class="text-lg leading-tight text-gray-700">
+                    Contact: <span class="font-semibold">+91 987 654 3210</span>
+                </p>
+                <p class="text-lg leading-tight">
+                    Email: <a class="text-green-600 hover:text-green-800 underline" href="mailto:seller.example@email.com">seller.example@email.com</a>
+                </p>
+                <p class="text-lg leading-tight text-gray-700">
+                    Online Store: <a href="#" class="text-green-600 hover:text-green-800 underline">[Link to Seller's Store/Profile, if any]</a>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <p class="section-title">
+                ABOUT ME
+            </p>
+            <p class="content-text">
+                A dedicated and results-oriented seller with over <span class="highlight">7 years of experience</span> in the vibrant Bengaluru market. Passionate about connecting customers with quality products and ensuring a seamless buying experience. I believe in building long-term relationships based on trust, transparency, and exceptional service. My approach is to actively listen to customer needs and offer tailored solutions.
+            </p>
+        </div>
+
+        <div>
+            <p class="section-title">
+                SALES PERFORMANCE & HIGHLIGHTS
+            </p>
+            <ul class="list-disc list-inside content-text space-y-2">
+                <li class="list-item"><span class="highlight">Customers Served:</span> Successfully assisted over <span class="highlight">1500+ satisfied customers</span>.</li>
+                <li class="list-item"><span class="highlight">Products Sold:</span> Facilitated the sale of over <span class="highlight">4000+ diverse products</span>.</li>
+                <li class="list-item"><span class="highlight">Customer Satisfaction:</span> Consistently maintained a <span class="highlight">97% positive feedback rating</span>.</li>
+                <li class="list-item"><span class="highlight">Top Selling Categories:</span> Specialized in <span class="highlight">Artisanal Crafts, Consumer Electronics, and Sustainable Home Goods</span>.</li>
+                <li class="list-item"><span class="highlight">Key Achievement:</span> Awarded "Top Seller of the Quarter" twice in 2024 for exceeding sales targets by 20%.</li>
+                <li class="list-item"><span class="highlight">Response Time:</span> Committed to responding to inquiries within <span class="highlight">2-4 business hours</span>.</li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="section-title">
+                EXPERTISE & SPECIALIZATION
+            </p>
+            <p class="content-text mb-2">
+                I specialize in sourcing and curating unique products in the following areas:
+            </p>
+            <ul class="list-disc list-inside content-text space-y-1">
+                <li class="list-item">Credit cards: Can handle all queries related to banks.</li>
+                <li class="list-item">Insurance: Have vast knowledge related to Insurance Policies.</li>
+                <li class="list-item">Latest Tech Gadgets: Staying updated with innovative consumer electronics.</li>
+                <li class="list-item">Custom Orders: Experienced in handling personalized product requests for special occasions.</li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="section-title">
+                MY SELLING PHILOSOPHY
+            </p>
+            <p class="content-text">
+                "My goal is to provide not just a product, but a delightful and trustworthy shopping experience. I prioritize clear communication, fair pricing, and prompt service. I'm always eager to understand your needs and help you find exactly what you're looking for. Your satisfaction is my top priority!"
+            </p>
+        </div>
+
+        <div>
+            <p class="section-title">
+                CUSTOMER TESTIMONIALS (Examples)
+            </p>
+            <div class="space-y-3">
+                <blockquote class="content-text p-4 bg-gray-50 rounded-md border-l-4 border-gray-300">
+                    <p>"Amazing service and incredibly helpful! [SELLER NAME] went above and beyond to find the perfect gift for me. Highly recommended!" - Priya S.</p>
+                </blockquote>
+                <blockquote class="content-text p-4 bg-gray-50 rounded-md border-l-4 border-gray-300">
+                    <p>"The product quality was excellent, and shipping was super fast. Will definitely buy from this seller again." - Rohan K.</p>
+                </blockquote>
+                <blockquote class="content-text p-4 bg-gray-50 rounded-md border-l-4 border-gray-300">
+                    <p>"Very knowledgeable about their products and offered great advice. A pleasure to deal with." - Anjali M.</p>
+                </blockquote>
+                 <p class="content-text text-sm italic"> (More testimonials available upon request or on my selling platform profile)</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="section-title">
+                OPERATIONAL DETAILS
+            </p>
+            <ul class="list-disc list-inside content-text space-y-1">
+                <li class="list-item"><span class="highlight">Working Hours:</span> Monday - Saturday, 10:00 AM - 7:00 PM (IST).</li>
+                <li class="list-item"><span class="highlight">Preferred Communication:</span> Email or Direct Message via [Platform Name].</li>
+                <li class="list-item"><span class="highlight">Shipping Policy:</span> Typically ships within 1-2 business days. Detailed policy available on product pages.</li>
+                <li class="list-item"><span class="highlight">Returns/Exchanges:</span> Accepted for eligible items within 7 days of delivery. Please refer to the return policy for specifics.</li>
+                 <li class="list-item"><span class="highlight">Payment Methods Accepted:</span> UPI, Credit/Debit Cards, Net Banking, [Specific Wallets if any].</li>
+            </ul>
+        </div>
+
+         <div>
+            <p class="section-title">
+                SKILLS
+            </p>
+            <p class="content-text">
+                Customer Relationship Management (CRM), Expert Product Knowledge, Persuasive Communication, Negotiation & Closing, Inventory Management, Online Marketplace Navigation (e.g., Amazon, Flipkart, Etsy), Digital Marketing Basics, Problem-Solving, Time Management, Multilingual Proficiency.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
